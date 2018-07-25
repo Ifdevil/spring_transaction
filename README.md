@@ -17,10 +17,11 @@ Spring事务管理高层抽象主要包括3个接口
 - **TransactionDefinition:事务定义信息（隔离、传播、超时、只读）**
 - **TransactionStatus:事务具体运行状态**
 
-###PlatformTransactionManager事务管理器
+### PlatformTransactionManager事务管理器
+
 Spring为不同的持久化框架提供了不同PlatformTransactionManager接口实现
 
-###TransactionDefinition:事务定义信息
+### TransactionDefinition:事务定义信息
 事务隔离级别：
 数据库提供的四种隔离级别：
 
@@ -40,10 +41,10 @@ Spring为不同的持久化框架提供了不同PlatformTransactionManager接口
 - **PROPAGATION_NEVER：以非事务方式运行，有事务，抛异常**
 - **<label  style="color:red">PROPAGATION_NESTED</label>：如果当前事务存在，则嵌套事务运行**
 
-###TransactionStatus:事务具体运行状态
+### TransactionStatus:事务具体运行状态
 提供获取事务状态的方法
 
-##实现
+## 实现
 Spring事务管理API：以上
 
 Spring的编程式事务管理：通过TransactionTemplate手动管理事务
